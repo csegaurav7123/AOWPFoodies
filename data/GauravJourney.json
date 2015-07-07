@@ -1,0 +1,30 @@
+[
+  {
+    "journey":"American",
+    "completed":"25",
+    "description":"One Characteristic of American cooking is fusion of multiple ethnic or regional approaches into completely new cooking styles.",
+    "duration": "3",
+    "imgUrl":"images/american.png"
+  },
+  {
+    "journey":"Japanese",
+    "completed":"0",
+    "description":"One Characteristic of Japanese cooking is fusion of multiple ethnic or regional approaches into completely new cooking styles.",
+    "duration": "3",
+    "imgUrl":"images/japanese.png"
+  },
+  {
+    "journey":"Mexican",
+    "completed":"0",
+    "description":"One Characteristic of Mexican cooking is fusion of multiple ethnic or regional approaches into completely new cooking styles.",
+    "duration": "3",
+    "imgUrl":"images/mexican.png"
+  },
+  {
+    "journey":"Italian",
+    "completed":"0",
+    "description":"One Characteristic of Italian cooking is fusion of multiple ethnic or regional approaches into completely new cooking styles.",
+    "duration": "3",
+    "imgUrl":"images/italian.png"
+  }
+]

@@ -1,0 +1,537 @@
+[
+  {
+    "Cuisine": "American",
+    "Dishes": [
+      {
+        "Dish": "All-American Bacon Chees Burger",
+        "Status":"Completed",
+        "Type":"Most Recent",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address":"28.5038941,77.0973031",
+            "City":"Gurgaon",
+            "Rating":"3",
+            "Rate":"$$ - Burgers",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com",
+            "imageUrl":"images/Apple_Pie.jpg"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "City":"Bombay",
+            "Rating":"5",
+            "Rate":"$$ - Burgers",
+            "Reviews":"1257 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Traditional American Desserts",
+        "Status":"Completed",
+        "Type":"Highest Rated",
+        "RestaurantList": [
+          {
+            "Name": "McRoyal",
+            "Address": "28.5282637,77.1839812",
+            "City":"Chandigarh",
+            "Rating":"4",
+            "Reviews":"125 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-1234",
+            "website": "mcroyal.com",
+            "imageUrl":"images/picjumbo.com_foodiesfeed.com_DSC_0004.jpg"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "City":"Bangalore",
+            "Rating":"5",
+            "Rate":"$$ - Desserts",
+            "Reviews":"1258 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "San Francisco Sourdough Bread",
+        "Status":"Started",
+        "Type":"Most Recent",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "28.5038941,77.0973031",
+            "City":"Bangalore",
+            "Rating":"3",
+            "Rate":"$$ - Bread",
+            "Reviews":"1259 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com",
+            "imageUrl":"images/Apple_Pie.jpg"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Rate":"$$ - Bread",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "New York Style Buffalo Wings",
+        "Status":"Pending",
+        "Type":"Top Reviewed",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "28.5282637,77.1839812",
+            "City":"Chandigarh",
+            "Rating":"3",
+            "Rate":"$$ - Wings",
+            "Reviews":"1260 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com",
+            "imageUrl":"images/picjumbo.com_foodiesfeed.com_DSC_0004.jpg"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Rate":"$$ - Wings",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Smoked Barbecue Ribs",
+        "Status":"Pending",
+        "Type":"Top Reviewed",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"45",
+            "Rate":"$$ - Ribs",
+            "Reviews":"1259 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com",
+            "imageUrl":"images/Apple_Pie.jpg"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Rate":"$$ - Ribs",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Cuisine": "Italian",
+    "Dishes": [
+      {
+        "Dish": "All-Italian Bacon Chees Burger",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1156 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1756 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+
+      {
+        "Dish": "Traditional Italian Dessert",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1556 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Italian Sourdough Bread",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1956 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Italian Style Buffalo Wings",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1956 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1356 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Smoked Barbecue Ribs",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"45",
+            "Reviews":"1956 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    "Cuisine": "Mexican",
+    "Dishes": [
+      {
+        "Dish": "All-Mexican Bacon Chees Burger",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1556 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+
+      {
+        "Dish": "Traditional Mexican Dessert",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1756 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Mexican Sourdough Bread",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1956 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Mexican Style Buffalo Wings",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1956 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Smoked Barbecue Ribs",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"45",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    "Cuisine": "Japanese",
+    "Dishes": [
+      {
+        "Dish": "All-Japanese Bacon Chees Burger",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+
+      {
+        "Dish": "Traditional Japanese Dessert",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Japan Sourdough Bread",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1956 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Japan Style Buffalo Wings",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Frankie",
+            "Address": "haryana",
+            "Rating":"3",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "frankie.com"
+          },
+          {
+            "Name": "McRoyal",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "mcroyal.com"
+          }
+        ]
+      },
+      {
+        "Dish": "Smoked Barbecue Ribs",
+        "Status":"Pending",
+        "RestaurantList": [
+          {
+            "Name": "Apple Pie Joe's",
+            "Address": "haryana",
+            "Rating":"45",
+            "Reviews":"1856 reviews",
+            "Duration": "  9.00am -6:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiejoe.com"
+          },
+          {
+            "Name": "Apple Pie Mary's",
+            "Address": "haryana",
+            "Rating":"5",
+            "Reviews":"1256 reviews",
+            "Duration": "  9.00am -8:00pm",
+            "Phone": "(454) 456-4564",
+            "website": "applepiemary.com"
+          }
+        ]
+      }
+
+    ]
+  }
+
+
+]

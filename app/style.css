@@ -1,0 +1,449 @@
+body{
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #E0E0E0;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none;
+}
+
+#gpChooseTrackLabel{
+    position: relative;
+    color: #696969;
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 80px;
+    text-align: center;
+}
+#gpJourneyOptions{
+    margin-top: 20px;
+    height: 100%;
+}
+.gpJourneyContainer{
+
+    margin-top: 20px;
+
+}
+.gpJourneyCuisineContainer{
+    height: 100px;
+    position: relative;
+}
+.gpJourneyCuisine{
+    height: 100px;
+    background-color: #FF6347;
+    float: left;
+}
+.gpJourneyCuisine2{
+    display: inline-block;
+    height: 100px;
+    background-color: #C00000;
+}
+.gpJourneyLabel{
+    position: absolute;
+    font-size: 15px;
+    top: 40px;
+    left: 60px;
+    color: #ffffff;
+}
+.gpPercentCompleted{
+    margin-left: 40px;
+    color: lightgray;
+    font-size: 12px;
+}
+.gpJourneyDescription{
+    position: relative;
+    height: 120px;
+    padding: 10px 0 0 10px;
+    background-color: #FFFFFF;
+    overflow-x: hidden
+word-wrap: normal;
+    font-size: 11px;
+    color: #686868;
+}
+.gpDurationValue{
+    position: absolute;
+    margin-top: 20px;
+}
+#gpOptionsDiv{
+    position: relative;
+    height: 500px;
+    margin-top: -50px;
+}
+#gpOptionsDiv::after{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-image: url("../images/home2.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: repeat-y;
+    height: 500px;
+    opacity: 0.1;
+
+}
+
+.gpDivCircle{
+}
+.gpCircle{
+    height: 140px;
+    background-color: #FF6347;
+    margin-top: 150px;
+    border-radius: 50%;
+    text-align: center;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.gpImgCircle{
+    display: inline-block;
+    vertical-align: middle;
+}
+.gpBelowCircle{
+    margin-top: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #AmericanDiv,#MexicanDiv{
+        margin-left: 120px;
+    }
+    #foodMapContainer,#buttonDiv{
+
+        padding-left: 0px;
+    }
+    #markBtn{
+        margin-top: 25px;
+    }
+    #textNotificationButton{
+        margin-top: 18px;
+    }
+}
+@media (max-width: 767px)  {
+    #gpOptionsDiv::after{
+        height: 1200px;
+    }
+    #gpOptionsDiv{
+        height: 1200px;
+    }
+    /*.modal-dialog{*/
+        /*width: 500px;*/
+        /*border-radius: 0px;*/
+    /*}*/
+}
+
+html, body{
+    height: 100%;
+}
+
+/*#wrap {*/
+    /*min-height: 100%;*/
+    /*margin-bottom: -100px;*/
+
+/*}*/
+/*#wrap:after {*/
+    /*content: "";*/
+    /*display: block;*/
+/*}*/
+/*#gpHomeFooter, #wrap:after {*/
+    /*height: 100px;*/
+/*}*/
+#gpHomeFooter
+{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 10px;
+}
+#myModal{
+    position: absolute;
+    top: 15px;
+    right:0;
+    left: auto;
+    bottom: 0;
+    overflow: auto;
+
+}
+#modal-dialog{
+    width: 180px;
+    border-radius: 0px;
+    padding-top: 0px;
+}
+.modal-content {
+    border-radius: 0 !important;
+}
+.modalText{
+    height: 30px;
+    border-radius: 0;
+}
+
+#passwordTextbox{
+    margin-top: 5px;
+}
+
+#loginButton{
+    border-radius: 0;
+    background-color: #FF6347;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+#social2, #social3{
+    margin-top: 10px;
+    margin-left: 42px;
+}
+
+#social1{
+    margin-top: 10px;
+}
+#modalLabel{
+    text-align: center;
+    margin-top: 20px;
+    color: lightgray;
+}
+    /*}*/
+/*Shweta's Code Starts Here*/
+
+
+.navbar {
+    margin-bottom: 0px;
+    height: 20px;
+}
+.navbar-default {
+    background-color: #FF6347;
+}
+
+.navbar-default .navbar-brand {
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:white;
+}
+.navbar-right{
+
+}
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.carousel-caption{
+    position:static;
+    color: black;
+    margin:0 auto;
+    margin-top: 100px;
+    text-align:center;
+    text-shadow: none;
+}
+#theCarousel {
+    margin: 40px 0px;
+    background-image:url('../images/picjumbo.com_IMG_4563.jpg');
+}
+#carousel img {
+    width: 100%;
+    height: auto;
+}
+
+#discoverMore{
+    position: absolute;
+    height: 40px;
+    background-color: #000000;
+    opacity: 0.7;
+    bottom: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+.carouselText{
+    font-size: 15px;
+    text-align: center;
+    color: #282828;
+
+}
+#getStartedBtn{
+    border-radius: 0;
+    background-color: #FF6347;
+    color: #FFFFFF;
+    border: none;
+    position: absolute;
+    bottom: 220px;
+}
+/*Shweta's Code Ends Here*/
+/*#test{*/
+    /*height: auto;*/
+    /*width: auto;*/
+/*}*/
+#foodMapContainer{
+    padding-bottom: 20px;
+}
+.foodImage{
+    position: relative;
+    /*background-image: url(../images/Apple_Pie.jpg);*/
+    background-position: center;
+    background-size: cover
+
+}
+.foodNMap{
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;
+}
+#textOverImage{
+    margin-left: 15px;
+
+}
+#dishName{
+    color: white;
+    font-size: 18px;
+}
+.starImage{
+    height: 14px;
+}
+.reviewFont{
+    color: white;
+    font-size: 11px;
+    font-weight: lighter;
+}
+#galleryLink{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+.badge{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #484848;
+}
+#badgeNumber{
+    font-size: 18px;
+}
+#challengeName{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: #686868;
+
+}
+#feedbackButton{
+    border-radius: 0%;
+}
+#foodInstruction{
+    font-size: 12px;
+    color: #686868;
+    font-weight: bold;
+}
+#foodMapContainer{
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    box-shadow: 0 5px 2px #888888;
+}
+#challengeDesc{
+    margin-top: 15px;
+}
+#foodDesc{
+    font-size: 12px;
+    color: #686868;
+    text-wrap: normal;
+}
+#textNotificationButton{
+    height: 40px;
+    background-color: #F0F0F0;
+    font-size: 12px;
+    color: #00bfff;
+    border-radius: 0%;
+    border: 0;
+    margin-top: 10px;
+}
+#storeDetails{
+    background-color: #F0F0F0 ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 245px;
+}
+#todayLabel{
+    font-size: 12px;
+}
+#timings{
+    font-size: 12px;
+    color: #686868;
+}
+#openLabel{
+    font-size: 12px;
+    color: #66CC00;
+}
+.icon{
+    height: 12px;
+}
+.phoneNUrl{
+    font-size: 12px;
+    color: #00bfff;
+}
+hr{
+    background-color: #d0d0d0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btnRect{
+    border-radius: 0%;
+    height: 40px;
+}
+#prevButton{
+    background-color: #505050  ;
+    color: #FFFFFF;
+}
+#markBtn{
+    color: #FFFFFF;
+    background-color: orangered;
+}
+#userImg{
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#userLabel{
+    margin-top:15px;
+    color:white;
+}
+#dropdownMenu1{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+#pathLabel{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.journeysLabel{
+    color:  #FF6347;
+}
+
+.cuisineLabel{
+    color: #888888;
+}
+.startedLabel
+{
+    color: #d0d0d0;
+    font-size: 10px;
+}
+.tickimage{
+    width: 25px;
+}
+
+.userMenu{
+    height: 0px;
+
+}

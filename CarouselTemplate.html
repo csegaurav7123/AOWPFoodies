@@ -1,0 +1,42 @@
+<section id="carouselContainer" class="row">
+    <div id="theCarousel" class="carousel slide img-responsive fill-screen" data-interval="true">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active img-responsive fill-screen"  >
+                <div class="carousel-caption">
+                    <h3>Challenge Yourself</h3>
+                    <br>
+                    <p class="carouselText">Foodie Journal makes it easy for you to embark on a
+                        journey to discover new cuisines aaa</p>
+                </div>
+            </div>
+            <div class="item img-responsive fill-screen">
+                <div class="carousel-caption">
+                    <h3>Challenge Yourself</h3>
+                    <br>
+                    <p class="carouselText">Foodie Journal makes it easy for you to embark on a
+                        journey to discover new cuisines bbb</p>
+                </div>
+            </div>
+            <div class="item img-responsive fill-screen">
+                <div class="carousel-caption">
+                    <h3>Challenge Yourself</h3>
+                    <br>
+                    <p class="carouselText">Foodie Journal makes it easy for you to embark on a
+                        journey to discover new cuisines ccc</p>
+                </div>
+            </div>
+        </div>
+        <input type="button" id="getStartedBtn" data-toggle="modal" data-target="#myModal" class="btn btn-default col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" value="Get Started">
+        <div id="discoverMore" class="col-xs-12">
+
+            <span><a href="#/journeys">Discover More</a></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
+    </div>
+
+</section>
+<script>
+    $(".carousel").carousel({
+        interval:2000
+    });
+</script>

@@ -1,0 +1,196 @@
+<!--<!DOCTYPE html>-->
+<!--<html  >-->
+<!--<head lang="en">-->
+    <!--<meta charset="utf-8">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="app/journeys-overview.css">-->
+    <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!--<script src="bower_components/angular/angular.js"></script>-->
+    <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
+    <!--<script src="scripts/journeys-overview.js"></script>-->
+    <!--<script src="scripts/angular-canvas-piechart.min.js"></script>-->
+    <!--<script src="scripts/JourneyModule.js"></script>-->
+    <!--<script src="scripts/app.js"></script>-->
+    <!--<script src="scripts/photo-gallery.js"></script>-->
+
+    <!--<title>Journeys Overview</title>-->
+
+<!--</head>-->
+<div id="detailsContainer" class="silver-bgcolor"  ng-controller="capstoneController" ng-cloak>
+<div class="container">
+    <form role="form">
+            <div class="white-bgcolor paddingLeft100PX paddingRight50PX">
+               <br>
+              <div class="tabbable white-bgcolor">
+                <ul class="nav nav-pills" id="journeyTab">
+                    <li  class="menuStyle" ng-class="{ active: cuisine.Cuisine==active.activeClass}" ng-click="active.activeClass=cuisine.Cuisine" ng-repeat="cuisine in journeys">
+                       <a id="cuisineButtons"  ng-click="getTabOpen(cuisine.Cuisine);">{{cuisine.Cuisine}}</a>
+                    </li>
+                    <div class="floatRight">
+                        <select class="menu-color fontSize12px border0Px" ng-options="filetrOptions for filetrOptions in ['Most Recent', 'Highest Rated', 'Top Reviewed']" ng-model="selectedOption" ng-init="selectedOption='Most Recent'" ng-click="filterByType(selectedOption)">
+                        </select>
+                    </div>
+                </ul>
+
+              </div>
+
+            <div class="tabbable1 displayNone white-bgcolor paddingRight50PX paddingLeft150PX">
+                <ul class="nav  nav-pills" id="journeyTab1">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="tab" ng-href="#" data-toggle="dropdown">Journeys <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li  ng-class="{ active: cuisine.Cuisine==active.activeClass}" click="active.activeClass=cuisine.Cuisine" ng-repeat="cuisine in journeys">
+                                <a ng-href="#{{cuisine.Cuisine}}"  ng-click="getTabOpen(cuisine.Cuisine);">{{cuisine.Cuisine}}</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <div class="floatRight">
+                        <!--<button class="btn btn-default dropdown-toggle" type="button" id="filterDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                            <!--Select-->
+                            <!--<span class="caret"></span>-->
+                        <!--</button>-->
+                        <button class="menu-color btn btn-default dropdown-toggle fontSize12px border0Px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-options="filetrOptions for filetrOptions in [ 'Most Recent', 'Highest Rated', 'Top Reviewed']" ng-model="selectedOption"  ng-click="filterByType(selectedOption)">
+                        </button>
+                    </div>
+                </ul>
+            </div>
+               <div  class="silver-bgcolor height1Px paddingRight150PX" ></div>
+           </div>
+
+
+            <div class="tab-content" >
+
+                <div id="{{cuisine.Cuisine}}" class="tab-pane fade in padding15px" ng-class="{ 'active': $first }" ng-repeat="cuisine in journeys | filter:tabName | limitTo:1" >
+
+
+                    <div  class="row white-bgcolor">
+                        <br>
+                        <div id="progressBarContainer" class="col-md-2 col-sm-2">
+                            <div id="progressBar"ng-include="'ProgressBar.html'"></div>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <span class="data-content1">{{cuisine.Cuisine}}
+                            </span>
+                            <div class="data-content2">
+                                One characteristic of {{cuisine.Cuisine}} cooking is the fusion
+                                of multiple ethnic or regional approaches into
+                                completely new cooking styles.
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="data-content3">
+                                Duration: 3 Weeks
+                            </div>
+
+                            <div class="data-content4">
+                                <button ng-click="continueClicked()" type="button" class="btn btn-block">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div   style="position: relative">
+
+                        <div id="accordion" class="panel-group" >
+                            <div ng-repeat="dishes in cuisine.Dishes ">
+
+                            <div class="panel  col-sm-10 col-sm-offset-1" >
+
+
+                                <div class="panel-heading">
+                                    <div class="panel-title" >
+                                        <a ng-href="#{{$index}}" data-toggle="collapse"
+                                           data-parent="#accordion" onclick="return false;" >
+                                            <span class="badge badgeNImage" ng-show="dishes.Status=='Started'||dishes.Status=='Pending'">{{ $index+1 }}</span>
+                                            <span class="badgeNImage" ng-show="dishes.Status=='Completed'">
+                                                 <img  ng-src="images/[FoodieChallenge]Asset (7).png" alt="rating" class="width25Px height25Px">
+                                            </span>
+                                            {{dishes.Dish}}</a>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="{{$index}}">
+
+                                    <div class="panel-body">
+                                        <div class="tab-pane fade in" ng-class="{ 'active': $first }" ng-repeat="rest in dishes.RestaurantList | limitTo :1"  ng-init="address=rest.Address">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="height20Px bold fontSize14px">{{rest.Name}}</div>
+                                                    <div class="height20Px">
+                                                     <span ng-repeat="i in range.slice(0,rest.Rating) track by $index">
+                                                     <img  ng-src="images/[FoodieChallenge]Asset (9).png" alt="rating" class="width10Px height10Px">
+                                                    </span>
+                                                    <span ng-repeat="i in range.slice(0,5-rest.Rating) track by $index">
+                                                     <img ng-src="images/[FoodieChallenge]Asset (10).png"alt="rating" class="width10Px height10Px">
+                                                    </span>
+                                                        <span class="fontSize10px bold menu-color">{{rest.Reviews}}</span>
+                                                    </div>
+                                                    <div class="height20Px bold fontSize10px menu-color">{{rest.Rate}}</div>
+                                                    <div class="height10Px fontSize10px">{{rest.City}}</div>
+                                                </div>
+                                                <br>
+
+                                                <div  class="col-md-3">
+                                                    <div id="storeDetailsContainer" class="silver-bgcolor  width150Px">
+                                                        <div class="height20Px fontSize10px">{{rest.Duration}}
+                                                        </div>
+                                                        <div class="height10Px fontSize10px">
+                                                            <a href="#" class="greenColor">Open now</a>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="height20Px fontSize10px">
+                                                            <img src="images/[FoodieChallenge]Asset (14).png" class="width10Px height10Px">{{rest.Phone}}
+                                                        </div>
+                                                        <div class="height20Px fontSize10px">
+                                                            <img src="images/[FoodieChallenge]Asset (13).png" class="width10Px height10Px"> {{rest.website}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 tabbable">
+                                                    <div class="height100Px width100Px">
+                                                        <script src="scripts/photo-gallery.js"></script>
+                                                        <ul class="row">
+                                                            <li >
+                                                                <img class="img-responsive height100Px width100Px"
+                                                                     src="images/[FoodieChallenge]Asset (17).png"/>
+
+                                                           </li>
+                                                            <li>
+                                                                <img class="img-responsive height100Px width100Px displayNone"
+                                                                     src="images/[FoodieChallenge]Asset (16).png"/>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-2 tabbable">
+                                                    <div class="height100Px width150Px">
+                                                        <iframe class="height100Px width150Px" frameborder="0" ng-src="{{trustSrc(address)}}" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+<!--</html>-->

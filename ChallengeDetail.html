@@ -1,0 +1,102 @@
+<!--<!DOCTYPE html>-->
+<!--<html ng-app="foodie">-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title> Details</title>-->
+    <!--<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="app/style.css">-->
+<!--</head>-->
+<!--<body class="container" ng-cloak ng-controller="challengeCtrl" >-->
+<div class="row">
+    <div id="pathLabel" ng-controller="journeyCtrl">
+    <img class="icon" src="images/%5BFoodieChallenge%5DAsset%20(12).png">
+        <span class="journeysLabel">&nbsp;Journeys</span>
+        <span class="cuisineLabel">/{{userDetails.cuisineSelected}}</span>
+    </div>
+</div>
+<div class="row">
+    <div id="foodMapContainer" class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12  ">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div id="challengeDesc" class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-9 col-sm-9 ">
+                        <span id="badgeNumber" ng-show="!completeFlag" class="badge"><span class="helper"></span>{{index+1}}</span>
+                        <img ng-show="completeFlag" class="tickimage" src="images/%5BFoodieChallenge%5DAsset%20(7).png">
+                        <span id="challengeName"> {{AmericanChallenges.Dishes[index].Dish}}</span>
+                        <span class="startedLabel" >&nbsp;{{startCompleteLabel}}</span>
+                    </div>
+                    <button ng-if="completeFlag" id="feedbackButton" class="btn-default btn col-md-3">Leave Feedback</button>
+                    <div class="row">
+                        <div  class="col-md-6 col-sm-6 col-xs-6">
+                            <div id="foodDiv" class="foodImage foodNMap">
+                                <br>
+                                <div id="textOverImage">
+                                    <span id="dishName">{{AmericanChallenges.Dishes[index].RestaurantList[0].Name}}</span>
+                                    <div id="starDiv">
+                                        <span ng-repeat="star in rating"><img class="starImage" src="images/%5BFoodieChallenge%5DAsset%20(9).png"></span>
+                                        <span ng-repeat="star in ratingEmpty"><img class="starImage" src="images/%5BFoodieChallenge%5DAsset%20(10).png"></span>
+
+                                        <span class="reviewFont">{{AmericanChallenges.Dishes[index].RestaurantList[0].Reviews}}</span>
+                                    </div>
+                                    <span class="reviewFont">$$ - Breakfast & Brunch</span>
+                                    <p id="galleryLink" class="reviewFont">See all 25 photos&nbsp;<img  class="icon" src="images/%5BFoodieChallenge%5DAsset%20(8).png"></p>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <div  class="col-md-6 col-sm-6 col-xs-6">
+                            <iframe id="mapDiv" class="foodNMap" frameborder="0"  ng-src=""></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-8 col-sm-8 ">
+                        <p id="foodInstruction" >Instructions: Go ahead and ask for the ultimate Apple Pie.</p>
+                        <div id="foodDesc"  >Vegan Pitchfork banjo, cold presses post-ironic XOXO church-key.
+                            Salvia singh-origin coffee 3 wolf moon typewriter you probably haven't heard of
+                            them freegan. Pitchfork cardian 8-bit four loko banh mi Bansky.Pork belly meggings
+                            food truck keytar polaroid mustache farm to table
+                        </div>
+                        <br>
+                        <button id="textNotificationButton"class="btn btn-default col-md-4 col-sm-4 " >Resend Text Notification</button>
+                    </div>
+                    <div id="storeDetails" class="col-md-4 col-sm-4 ">
+                        <div class="col-md-10 col-sm-10 storeDetailsSubDiv">
+                            <span id="todayLabel">Today </span>
+                            <span id="timings">{{AmericanChallenges.Dishes[index].RestaurantList[0].Duration}}</span>
+                            <p id="openLabel">Open Now</p>
+                        </div>
+                        <hr class="col-md-9 col-sm-9 col-sm-offset-1 col-md-offset-1"/>
+                        <div class="storeDetailsSubDiv col-md-10 col-sm-10">
+                            <img class="icon" src="images/%5BFoodieChallenge%5DAsset%20(14).png"><span class="phoneNUrl">  &nbsp;{{AmericanChallenges.Dishes[index].RestaurantList[0].Phone}}</span>
+                            <br>
+                            <img class="icon" src="images/%5BFoodieChallenge%5DAsset%20(13).png"><span class="phoneNUrl">  &nbsp;{{AmericanChallenges.Dishes[index].RestaurantList[0].website}}</span>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="buttonDiv" class="row"  >
+    <div class="col-md-10 col-md-push-1 col-sm-push-0 col-sm-12">
+        <button id="prevButton" class="btn btn-default col-md-2 col-sm-6 btnRect" ng-click="prevChallenge()">Previous</button>
+        <button id="nextBtnSm" class="btn btn-default  btnRect col-sm-6 hidden-md nextBtn" ng-click="nextChallenge()" disabled>Next</button>
+        <button id="markBtn" class="btn btn-default col-md-6 btnRect col-md-offset-1 col-sm-12" ng-click="alterMarkText()"><img class="tickimage" ng-if="completeFlag" src="images/%5BFoodieChallenge%5DAsset%20(7).png">&nbsp;{{markBtnText}}</button>
+        <button id="nextBtn" class="btn btn-default col-md-2 col-sm-2 btnRect col-md-offset-1 nextBtn  visible-md" ng-click="nextChallenge()" disabled>Next</button>
+    </div>
+</div>
+
+<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+<!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<!--<script src="bower_components/angular/angular.js"></script>-->
+<!--<script src="bower_components/angular-route/angular-route.js"></script>-->
+<!--<script src="scripts/AOWPModule.js"></script>-->
+<!--<script src="scripts/JourneyModule.js"></script>-->
+<!--<script src="scripts/site.js"></script>-->
+<!--</body>-->
+<!--</html>-->

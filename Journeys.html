@@ -1,0 +1,34 @@
+
+
+<div class="container-fluid">
+    <div class="row">
+        <span id="gpChooseTrackLabel" class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">Welcome! Choose a track to get started.</span>
+    </div>
+    <div class="row">
+        <div id="gpJourneyOptions" class="col-md-3 col-sm-6 col-xs-12" ng-repeat="journey in journeys">
+
+            <div class="row">
+                <a   ng-click="journeySelected()">
+                <div id="{{journey.journey}}Div" class="gpJourneyContainer col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <div class="gpJourneyCuisineContainer">
+                        <div class="gpJourneyCuisine" ng-style="{width:(journey.completed)+'%'}"></div>
+                        <div class="gpJourneyCuisine2" ng-style="{width:(100-(journey.completed))+'%'}"></span></div>
+                        <div class="gpJourneyLabel">
+                            <img ng-src="{{journey.imgUrl}}">
+                            <span>{{journey.journey}}</span>
+                            <br>
+                            <span class="gpPercentCompleted">{{journey.completed}}%</span>
+                        </div>
+                    </div>
+                    <div class="gpJourneyDescription">
+                        {{journey.description}}
+                        <br>
+                        <label class="gpDurationLabel"></label>
+                        <span class="gpDurationValue"> Duration: {{journey.duration}} Weeks</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

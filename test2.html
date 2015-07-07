@@ -1,0 +1,60 @@
+<html ng-app="login">
+
+<head>
+    <title>Demo: Getting an email address using the Google+ Sign-in button</title>
+    <!-- Include the API client and Google+ client. -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "https://plus.google.com/js/client:platform.js" async defer></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="scripts/googleController.js"></script>
+
+</head>
+
+<body ng-controller="googleController">
+<!-- Container with the Sign-In button. -->
+Here:{{name}}<br>
+<img ng-src={{imageUrl}}>
+<div id="gConnect" class="button">
+    <button class="g-signin"
+            data-scope="email"
+            data-clientid="229341829274-92nhf4fhf59tgml86nai5frggm8gnkmg.apps.googleusercontent.com"
+            data-callback="onSignInCallback"
+            data-theme="dark"
+            data-cookiepolicy="single_host_origin">
+    </button>
+    <!-- Textarea for outputting data -->
+    <div id="response" class="hide">
+        <textarea id="responseContainer" style="width:100%; height:150px"></textarea>
+    </div>
+</div>
+<!-- Button trigger modal -->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<img src="images/close-image.png" class="close" data-dismiss="modal" aria-label="Close">-->
+                <!--<h4 class="modal-title" id="myModalLabel">Lava Lamp</h4>-->
+                <!--<div  id="popBody">-->
+                    <!--<img id="popImage" src="images/lavalamp-image.png">-->
+
+                <!--</div>-->
+                <!--<div id="modalContent">-->
+                    <!--This modal is about lava Lamp.This modal is about lava Lamp.This modal is about lava Lamp.This modal is about lava Lamp.-->
+                    <!--This modal is about lava Lamp.This modal is about lava Lamp.This modal is about lava Lamp.-->
+                    <!--<br><br>-->
+                    <!--<span class="contributedByLabel">Contributed by-</span><span class="assetCreatedBy">Rajesh V</span><br>-->
+                    <!--<span class="assetDate">Created on-5/8/2014</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;-End&ndash;&gt;-->
+</body>
+
+<script>
+
+</script>
+
+</html>

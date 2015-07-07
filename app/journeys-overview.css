@@ -1,0 +1,406 @@
+
+.data-content {
+    padding: 15px;
+    font-size: 18px;
+    min-height: 150px;
+    margin-bottom: 10px;
+}
+.data-content1 {
+    padding: 15px;
+    font-size: 18px;
+    min-height: 50px;
+    width:280px;
+}
+.data-content2 {
+    padding: 15px;
+    font-size: 12px;
+    min-height: 100px;
+    width:350px;
+}
+.data-content3 {
+    padding: 10px;
+    font-size: 12px;
+    width:150px;
+    background-color: #F0F0F0;
+    margin-bottom:20px;
+}
+.data-content4 {
+    font-size: 12px;
+    width:150px;
+    background-color: #FF6347;
+}
+.btn-block{
+    width:150px;
+    background-color: #FF6347;
+    color:#f8f8f8;
+}
+.nav-pills>li>a {
+    border-radius:1px;
+    color:#adadad;
+    border: 1px;
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover{
+    color:#ffffff;
+    background-color:#FF6347;
+    border: 1px solid #FF6347;
+}
+.panel-info>.panel-heading,.panel-info>.panel-heading>.panel-title{
+    background-color: #f8f8f8;
+}
+.silver-bgcolor{
+    background-color: #E0E0E0;
+}
+.white-bgcolor{
+    background-color: #ffffff;
+}
+.panel-title>a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tick-size{
+    width:20px;
+    height:20px;
+}
+.displayNone{
+    display:none;
+}
+.displayBlock{
+    display:block;
+}
+
+@media (max-width: 500px) {
+    .tabbable {
+        display:none;
+    }
+    .tabbable1 {
+        display:inline-block;
+    }
+}
+.nav-pills>li{
+    border-radius: 1px;
+    border: 1px solid #B0B0B0;
+}
+.badge{
+    width:25px;
+    height: 25px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#484848 ;
+}
+
+
+.width20Px{
+    width:20px;
+}
+
+.width150Px{
+    width:150px;
+}
+.width400Px{
+    width:400px;
+}
+.height20Px{
+    height:20px;
+}
+
+.height25Px{
+    height:25px;
+}
+.width10Px{
+    width:10px;
+}
+.width25Px{
+    width:25px;
+}
+.height100Px{
+    height:100px;
+}
+.height300Px{
+    height:300px;
+}
+.height10Px{
+    height:10px;
+}
+.height1Px{
+    height:1px;
+}
+.fontSize8px{
+    font-size:8px;
+}
+.fontSize10px{
+    font-size:10px;
+}
+.fontSize12px{
+    font-size:12px;
+}
+.fontSize13px{
+    font-size:13px;
+}
+.fontSize14px{
+    font-size:14px;
+}
+.bold{
+    font-weight:bold;
+}
+hr
+{
+    background-color: #dbdbdb;
+    border: 0 none;
+    color: #dbdbdb;
+    height: 2px;
+}
+.height2Px{
+    height:2px;
+}
+.greenColor{
+    color:#3e8f3e;
+}
+
+.paddingRight150PX{
+    padding-right:150px;
+}
+.paddingRight50PX{
+    padding-right:50px;
+}
+.paddingLeft150PX{
+    padding-left:150px;
+}
+.paddingLeft100PX{
+    padding-left:100px;
+}
+.padding15px{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+
+ul {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+ul li {
+    list-style:none;
+    margin-bottom:25px;
+}
+ul li img {
+    cursor: pointer;
+}
+.modal-body {
+    padding:5px !important;
+}
+.modal-content {
+    border-radius:0;
+}
+.modal-dialog img {
+    text-align:center;
+    margin:0 auto;
+}
+.controls{
+    width:50px;
+    display:block;
+    font-size:11px;
+    padding-top:8px;
+    font-weight:bold;
+}
+.next {
+    float:right;
+    text-align:right;
+}
+/*override modal for demo only*/
+.modal-dialog {
+    max-width:500px;
+    padding-top: 90px;
+}
+@media screen and (min-width: 768px){
+    .modal-dialog {
+        width:500px;
+        padding-top: 90px;
+    }
+}
+@media screen and (max-width:1500px){
+    #ads {
+        display:none;
+    }
+}
+.menu-color{
+    color:#adadad;
+}
+
+.menuStyle{
+    height: 30px;
+    width: 90px;
+    text-align: center;
+}
+.anchorStyles{
+    height: 30px;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.floatRight{
+    float:right;
+}
+
+.border0Px{
+    border:0px solid #f8f8f8
+}
+
+
+
+
+.wrapper-dropdown-4 {
+    /* Size and position */
+    position: relative;
+    width: 270px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 30px;
+
+    /* Styles */
+    background: #fff;
+    border: 1px solid silver;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper-dropdown-4:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #ffaa9f transparent;
+}
+
+.wrapper-dropdown-4 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    margin-top: 1px;
+    left: -1px;
+    right: -1px;
+
+    /* Styles */
+    background: white;
+    border: inherit;
+    border-top: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Red lines: the pseudo-elements way */
+.wrapper-dropdown-4 .dropdown:before,
+.wrapper-dropdown-4:before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    border: 1px solid #ffaa9f;
+    border-top: none;
+    border-bottom: none;
+    z-index: 2;
+}
+
+
+.wrapper-dropdown-4 .dropdown li {
+    position: relative; /* Enable absolute positioning for checkboxes */
+}
+
+.wrapper-dropdown-4 .dropdown li label {
+    display: block;
+    padding: 10px 10px 10px 30px; /* Same padding as the button */
+    border-bottom: 1px dotted #1ccfcf;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-4 .dropdown li:last-of-type label {
+    border: none;
+}
+
+.wrapper-dropdown-4 .dropdown li input /* Checkboxes */ {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-4 .dropdown li:hover label {
+    background: #f0f0f0;
+}
+
+/* Checked state */
+
+.wrapper-dropdown-4 .dropdown li input:checked ~ label {
+    color: grey;
+    text-decoration: line-through;
+}
+#cuisineButtons{
+    height: 30px;
+    padding: 4px;
+    font-size: 13px;
+}
+
+/* Active state */
+.panel{
+    margin-top: 20px;
+    border-radius: 0px;
+}
+.badgeNImage
+{
+    margin-right: 20px;
+
+}
+
+.chart {
+    width:100px;
+    height:100px;
+    display:inline-block;
+    transform: rotate(-80deg);
+    margin-left: 50px;
+
+}
+#imageDiv{
+    position: absolute;
+    top: 33px;
+    left: 85px;
+}
+#detailsContainer{
+    margin-top: 50px;
+}
+#progressBarContainer{
+    position: relative;
+}
+#progressBar{
+position: absolute;
+    left: 0px;
+}
+
+#storeDetailsContainer{
+    background-color: #F0F0F0 ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    }
